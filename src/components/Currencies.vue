@@ -2,7 +2,7 @@
   <v-card>
     <v-card-text>
       <v-row>
-        <v-col cols="8">
+        <v-col cols="6" md="8">
           <v-text-field
               v-model="search"
               append-icon="mdi-magnify"
@@ -11,7 +11,8 @@
               hide-details
           />
         </v-col>
-        <v-col offset="1" cols="3">
+        <v-spacer/>
+        <v-col cols="6" md="3">
           <v-select v-model="userBase" :items="currencies"/>
         </v-col>
       </v-row>

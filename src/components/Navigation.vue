@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent expand-on-hover>
+  <v-navigation-drawer permanent :expand-on-hover="!$vuetify.breakpoint.mobile" mini-variant-width="56px" :mini-variant="$vuetify.breakpoint.mobile">
 
     <v-list dense nav>
       <v-list-item link @click="$vuetify.theme.dark=!$vuetify.theme.dark">
