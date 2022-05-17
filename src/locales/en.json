@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "en": "English",
+    "ru": "Russian",
+    "theme": {
+      "light": "Light theme",
+      "dark": "Dark theme"
+    }
+  },
+  "calculator": {
+    "title": "Currency calculator",
+    "button": "Calculate the result",
+    "example": "Example",
+    "error": "Incorrect input"
+  },
+  "navigation": {
+    "calc": "Calculator",
+    "curr": "Currencies rate"
+  },
+  "currencies": {
+    "search": "Search"
+  }
+}
