@@ -18,6 +18,8 @@
     "curr": "Currencies rate"
   },
   "currencies": {
-    "search": "Search"
+    "search": "Search",
+    "currency": "Currency",
+    "price": "Rate"
   }
 }

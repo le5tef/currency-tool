@@ -18,6 +18,8 @@
     "curr": "Курсы валют"
   },
   "currencies": {
-    "search": "Поиск"
+    "search": "Поиск",
+    "currency": "Валюта",
+    "price": "Стоимость"
   }
 }

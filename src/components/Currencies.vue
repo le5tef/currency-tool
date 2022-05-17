@@ -40,16 +40,7 @@ export default {
       pageCount: 0,
       itemsPerPage: 10,
       factor: 1,
-      search: '',
-      headers: [
-        {
-          text: 'Валюта',
-          align: 'start',
-          sortable: false,
-          value: 'currency',
-        },
-        {text: 'Цена', value: 'rate'},
-      ],
+      search: ''
     }
   },
   computed: {
@@ -62,6 +53,12 @@ export default {
       set(val) {
         this.$store.commit('money/setUserBase', val)
       }
+    },
+    headers() {
+      return [
+        {text: this.$t('currencies.currency'), value: 'currency'},
+        {text: this.$t('currencies.price'), value: 'rate'},
+      ]
     }
   }
 }
