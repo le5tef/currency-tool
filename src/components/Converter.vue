@@ -8,7 +8,7 @@
                         outlined></v-text-field>
           <v-btn width="100%" type="submit">{{ $t('calculator.button') }}</v-btn>
         </v-form>
-        <div v-if="result" class="d-flex flex-row align-center">
+        <div v-if="result" class="d-flex flex-column flex-md-row align-center">
           <v-row class="no-gutters">
             <v-col cols="8">
               <v-text-field v-model="factor"></v-text-field>
@@ -36,7 +36,7 @@
 
 <script>
 import {mapGetters, mapState} from 'vuex'
-import {convert} from '../utils'
+import {convert} from '@/utils'
 
 const inputRegex = /^(?<factor>[+-]?([0-9]*[.,])?[0-9]+)\s+(?<from_>\w{3})\s+(in)?(to)?\s+(?<to>\w{3})$/i;
 export default {
